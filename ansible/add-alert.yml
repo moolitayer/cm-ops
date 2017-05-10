@@ -1,0 +1,22 @@
+# Create a new alert in ManageIQ
+---
+- hosts: localhost
+
+  tasks:
+    - name:
+      manageiq_alert:
+        description: Test Alert 01
+        options:
+          :notifications:
+            :delay_next_evaluation: 20
+        entity: container_node
+        expression:
+          :eval_method: dwh_generic
+          :mode: internal
+        enabled: true
+        state: present
+        miq_url: 'http://localhost:3000'
+        miq_username: 'admin'
+        miq_password: 'smartvm'
+        miq_verify_ssl: False
+
