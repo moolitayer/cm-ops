@@ -55,3 +55,11 @@ cat config/settings.local.yml
 # restart servuce
 systemctl restart evmserverd
 ```
+
+## Setup hawkular to send out alerts
+```
+cd hawkular
+01-push-trigger.sh
+02-list-triggers.sh
+...
+```
