@@ -1,5 +1,8 @@
 # cm-ops alerts
 
+**Hawkular based alerting has been discontinued**
+See: https://github.com/ManageIQ/manageiq/issues/14238
+
 ## What
 
 This document explains how to setup and view alerts in ManageIQ for the cm-ops flow.
